@@ -1,5 +1,5 @@
 import textutils.core as c 
 
 def test_word_count_basic():
-    text = "Hello world I am testing the word count function"
-    assert c.word_count(text) == 9
+    text = "Hello world hello WORLD WORLD HELLO"
+    assert c.word_count(text) == {'hello': 3, 'world': 3}
